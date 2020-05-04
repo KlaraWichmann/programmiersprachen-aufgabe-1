@@ -16,3 +16,7 @@ TEST_CASE ("describe_checksum", "[checksum]") {
     REQUIRE (checksum (505) == 10);
     REQUIRE (checksum (121512) == 12);
 }
+
+TEST_CASE ("describe_sum_multiples", "[sum_multiples]") {
+    REQUIRE (sum_multiples () == 204054);
+}

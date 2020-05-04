@@ -63,3 +63,22 @@ int checksum (int num) {
         return result;
     }
 }
+
+int lastDigit (int num) {
+    int result = 0;
+    while (num > 0) {
+        result = num % 10;
+        num /= 10;
+    }
+    return result;
+}
+
+int sum_multiples () {
+    int result = 0;
+    for (int i = 0; i <= 1000; i++) {
+        if (checksum(i) % 3 == 0 || lastDigit(i) == 5 || lastDigit(i) == 0) {
+            result += i;
+        }
+    }
+    return result;
+}
