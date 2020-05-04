@@ -1,4 +1,4 @@
-# Install script for directory: /Users/klara/Programmiersprachen/programmiersprachen-helloworld/source
+# Install script for directory: /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/klara/Programmiersprachen/programmiersprachen-helloworld/source/tests.cpp" "/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/source/CMakeFiles/tests.dir/tests.cpp.o"
+  "/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/source/tests.cpp" "/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/source/CMakeFiles/tests.dir/tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

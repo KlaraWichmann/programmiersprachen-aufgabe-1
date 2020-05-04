@@ -1,4 +1,6 @@
+
 #include <iostream>
+#include "tasks.hpp"
 
 /**
  * Kleinstes gemeinsames Vielfaches von a und b finden
@@ -24,12 +26,3 @@
     }
     return result;
   }
-
-
-int main()
-{
-
-  //Kleinste durch 1 - 20 teilbare Zahl
-  std::cout << smallestNum () << "\n";
-
-}

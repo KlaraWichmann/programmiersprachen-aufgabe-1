@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -isysroot /Applications/Xcode.app/Contents/Developer/Plat
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/klara/Programmiersprachen/programmiersprachen-helloworld/external/catch-1.4.0 
+CXX_INCLUDES = -I/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/external/catch-1.4.0 
 

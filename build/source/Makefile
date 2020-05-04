@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.14.5/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/klara/Programmiersprachen/programmiersprachen-helloworld
+CMAKE_SOURCE_DIR = /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build
+CMAKE_BINARY_DIR = /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/CMakeFiles /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/source/CMakeFiles/progress.marks
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/CMakeFiles 0
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/CMakeFiles /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/source/CMakeFiles/progress.marks
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -122,50 +122,77 @@ tests: source/CMakeFiles/tests.dir/rule
 
 # fast build rule for target.
 tests/fast:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
 # Convenience name for target.
-source/CMakeFiles/helloworld.dir/rule:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
-.PHONY : source/CMakeFiles/helloworld.dir/rule
+source/CMakeFiles/main.dir/rule:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/main.dir/rule
+.PHONY : source/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-helloworld: source/CMakeFiles/helloworld.dir/rule
+main: source/CMakeFiles/main.dir/rule
 
-.PHONY : helloworld
+.PHONY : main
 
 # fast build rule for target.
-helloworld/fast:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+main/fast:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-helloworld.o: helloworld.cpp.o
+main.o: main.cpp.o
 
-.PHONY : helloworld.o
+.PHONY : main.o
 
 # target to build an object file
-helloworld.cpp.o:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.o
-.PHONY : helloworld.cpp.o
+main.cpp.o:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-helloworld.i: helloworld.cpp.i
+main.i: main.cpp.i
 
-.PHONY : helloworld.i
+.PHONY : main.i
 
 # target to preprocess a source file
-helloworld.cpp.i:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.i
-.PHONY : helloworld.cpp.i
+main.cpp.i:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-helloworld.s: helloworld.cpp.s
+main.s: main.cpp.s
 
-.PHONY : helloworld.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-helloworld.cpp.s:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
-.PHONY : helloworld.cpp.s
+main.cpp.s:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+tasks.o: tasks.cpp.o
+
+.PHONY : tasks.o
+
+# target to build an object file
+tasks.cpp.o:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/tasks.cpp.o
+.PHONY : tasks.cpp.o
+
+tasks.i: tasks.cpp.i
+
+.PHONY : tasks.i
+
+# target to preprocess a source file
+tasks.cpp.i:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/tasks.cpp.i
+.PHONY : tasks.cpp.i
+
+tasks.s: tasks.cpp.s
+
+.PHONY : tasks.s
+
+# target to generate assembly for a file
+tasks.cpp.s:
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/main.dir/build.make source/CMakeFiles/main.dir/tasks.cpp.s
+.PHONY : tasks.cpp.s
 
 tests.o: tests.cpp.o
 
@@ -173,7 +200,7 @@ tests.o: tests.cpp.o
 
 # target to build an object file
 tests.cpp.o:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.o
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.o
 .PHONY : tests.cpp.o
 
 tests.i: tests.cpp.i
@@ -182,7 +209,7 @@ tests.i: tests.cpp.i
 
 # target to preprocess a source file
 tests.cpp.i:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.i
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.i
 .PHONY : tests.cpp.i
 
 tests.s: tests.cpp.s
@@ -191,7 +218,7 @@ tests.s: tests.cpp.s
 
 # target to generate assembly for a file
 tests.cpp.s:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.s
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
 # Help Target
@@ -203,10 +230,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tests"
-	@echo "... helloworld"
-	@echo "... helloworld.o"
-	@echo "... helloworld.i"
-	@echo "... helloworld.s"
+	@echo "... main"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... tasks.o"
+	@echo "... tasks.i"
+	@echo "... tasks.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"
@@ -221,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/klara/Programmiersprachen/programmiersprachen-helloworld/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
