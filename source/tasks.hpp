@@ -1,5 +1,5 @@
-#ifndef TASKS.HPP
-#define TASKS.HPP
+#ifndef TASKS_HPP
+#define TASKS_HPP
 
 int smallestNum ();
 
