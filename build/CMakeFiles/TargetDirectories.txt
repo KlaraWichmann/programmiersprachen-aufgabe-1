@@ -1,6 +1,0 @@
-/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/CMakeFiles/rebuild_cache.dir
-/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/CMakeFiles/edit_cache.dir
-/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/source/CMakeFiles/rebuild_cache.dir
-/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/source/CMakeFiles/edit_cache.dir
-/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/source/CMakeFiles/tests.dir
-/Users/klara/Programmiersprachen/programmiersprachen-aufgabe-1/build/source/CMakeFiles/main.dir
