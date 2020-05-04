@@ -50,3 +50,12 @@ int gcd (int a, int b) {
     return result;
 }
 
+
+int checksum (int num) {
+    int result = 0;
+    while (num > 0) {
+        result += num % 10;
+        num /= 10;
+    }
+    return result;
+}

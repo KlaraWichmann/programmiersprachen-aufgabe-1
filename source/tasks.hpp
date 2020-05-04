@@ -11,4 +11,9 @@ int smallestNum ();
 */
 int gcd (int a, int b);
 
+/**
+* Quersumme einer ganzen Zahl berechnen
+*/
+int checksum (int num);
+
 #endif
