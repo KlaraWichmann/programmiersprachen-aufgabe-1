@@ -52,10 +52,14 @@ int gcd (int a, int b) {
 
 
 int checksum (int num) {
-    int result = 0;
-    while (num > 0) {
-        result += num % 10;
-        num /= 10;
+    if (num < 0) {
+        throw std::invalid_argument ("Uebergebene Zahlen sind ungueltig");
+    } else {
+        int result = 0;
+        while (num > 0) {
+            result += num % 10;
+            num /= 10;
+        }
+        return result;
     }
-    return result;
 }
