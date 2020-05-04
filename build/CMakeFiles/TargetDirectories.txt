@@ -1,0 +1,6 @@
+/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/CMakeFiles/rebuild_cache.dir
+/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/CMakeFiles/edit_cache.dir
+/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/source/CMakeFiles/rebuild_cache.dir
+/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/source/CMakeFiles/edit_cache.dir
+/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/source/CMakeFiles/tests.dir
+/Users/klara/Programmiersprachen/programmiersprachen-helloworld/build/source/CMakeFiles/helloworld.dir
