@@ -36,4 +36,9 @@ double volumeCylinder (int r, int h);
  */
 double surfaceCylinder (int r, int h);
 
+/**
+ * Gibt die Fakultät einer Zahl aus
+ */
+int factorial (int i);
+
 #endif

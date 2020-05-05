@@ -18,7 +18,7 @@ TEST_CASE ("describe_checksum", "[checksum]") {
 }
 
 TEST_CASE ("describe_sum_multiples", "[sum_multiples]") {
-    REQUIRE (sum_multiples () == 204054);
+    REQUIRE (sum_multiples () == 234168);
 }
 
 TEST_CASE ("describe_fract", "[fract]") {
@@ -41,4 +41,11 @@ TEST_CASE ("describe_surface_cylinder", "[surface_cylinder]") {
     REQUIRE (surfaceCylinder (1, 1) == Approx(12.56));
     REQUIRE (surfaceCylinder (12, 13) == Approx(1884.95));
     REQUIRE (surfaceCylinder (0, 0) == Approx(0.00));
+}
+
+TEST_CASE ("describe_factorial", "[factorial]") {
+    REQUIRE (factorial (2) == 2);
+    REQUIRE (factorial (1) == 1);
+    REQUIRE (factorial (6) == 720);
+    REQUIRE (factorial (0) == 1);
 }

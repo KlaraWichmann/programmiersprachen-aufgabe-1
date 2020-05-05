@@ -77,7 +77,7 @@ int lastDigit (int num) {
 int sum_multiples () {
     int result = 0;
     for (int i = 0; i <= 1000; i++) {
-        if (checksum(i) % 3 == 0 || lastDigit(i) == 5 || lastDigit(i) == 0) {
+        if (i % 3 == 0 || i % 5 == 0) {
             result += i;
         }
     }
@@ -107,4 +107,8 @@ double surfaceCylinder (int r, int h) {
     surface = 2 * M_PI * r * (r + h);
     surface = (int)(surface * 100)/100.0;
     return surface;
+}
+
+int factorial (int num) {
+    return (num > 1 ? (num * factorial (num - 1)) : 1);
 }
