@@ -103,7 +103,8 @@ double volumeCylinder (int r, int h) {
 }
 
 double surfaceCylinder (int r, int h) {
-    double result = 0.0;
-    
-    return result;
+    double surface = 0.0;
+    surface = 2 * M_PI * r * (r + h);
+    surface = (int)(surface * 100)/100.0;
+    return surface;
 }

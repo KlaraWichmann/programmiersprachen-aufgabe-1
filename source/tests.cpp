@@ -37,5 +37,8 @@ TEST_CASE ("describe_volume_cylinder", "[volume_cylinder]") {
 }
 
 TEST_CASE ("describe_surface_cylinder", "[surface_cylinder]") {
-    //REQUIRE (surfaceCylinder (1, 1) == Approx(0.0));
+    REQUIRE (surfaceCylinder (2, 1) == Approx(37.69));
+    REQUIRE (surfaceCylinder (1, 1) == Approx(12.56));
+    REQUIRE (surfaceCylinder (12, 13) == Approx(1884.95));
+    REQUIRE (surfaceCylinder (0, 0) == Approx(0.00));
 }
