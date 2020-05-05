@@ -18,9 +18,9 @@
   }
 
 
-  int smallestNum () {
+  int smallest_num () {
     int max = 20;
-    int result = kgv(1, 2);
+    int result = kgv (1, 2);
     for (int i = 3; i <= max; i++) {
       result = kgv(result, i);
     }
@@ -95,14 +95,14 @@ double fract (double num) {
     return result;
 }
 
-double volumeCylinder (int r, int h) {
+double volume_cylinder (int r, int h) {
     double volume = 0.0;
     volume = M_PI * std::pow(r, 2.0) * h;
     volume = (int)(volume * 100)/100.0;
     return volume;
 }
 
-double surfaceCylinder (int r, int h) {
+double surface_cylinder (int r, int h) {
     double surface = 0.0;
     surface = 2 * M_PI * r * (r + h);
     surface = (int)(surface * 100)/100.0;
@@ -111,4 +111,22 @@ double surfaceCylinder (int r, int h) {
 
 int factorial (int num) {
     return (num > 1 ? (num * factorial (num - 1)) : 1);
+}
+
+bool is_prime (int num) {
+    bool prime = false;
+    if (num < 2) {
+    throw std::invalid_argument ("Uebergebene Zahlen sind ungueltig");
+    } else if (num == 2 ) {
+        prime = true;
+    } else if (num % 2 != 0) {
+            for (int i = 2; i < num; i++) {
+                if (num % i != 0) {
+                    prime = true;
+                } else {
+                    prime = false;
+                }
+            }
+    }
+    return prime;
 }

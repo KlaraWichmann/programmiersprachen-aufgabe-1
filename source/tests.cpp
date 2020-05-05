@@ -30,17 +30,17 @@ TEST_CASE ("describe_fract", "[fract]") {
 }
 
 TEST_CASE ("describe_volume_cylinder", "[volume_cylinder]") {
-    REQUIRE (volumeCylinder (2, 1) == Approx(12.56));
-    REQUIRE (volumeCylinder (1, 1) == Approx(3.14));
-    REQUIRE (volumeCylinder (12, 13) == Approx(5881.06));
-    REQUIRE (volumeCylinder (0, 0) == Approx(0.00));
+    REQUIRE (volume_cylinder (2, 1) == Approx(12.56));
+    REQUIRE (volume_cylinder (1, 1) == Approx(3.14));
+    REQUIRE (volume_cylinder (12, 13) == Approx(5881.06));
+    REQUIRE (volume_cylinder (0, 0) == Approx(0.00));
 }
 
 TEST_CASE ("describe_surface_cylinder", "[surface_cylinder]") {
-    REQUIRE (surfaceCylinder (2, 1) == Approx(37.69));
-    REQUIRE (surfaceCylinder (1, 1) == Approx(12.56));
-    REQUIRE (surfaceCylinder (12, 13) == Approx(1884.95));
-    REQUIRE (surfaceCylinder (0, 0) == Approx(0.00));
+    REQUIRE (surface_cylinder (2, 1) == Approx(37.69));
+    REQUIRE (surface_cylinder (1, 1) == Approx(12.56));
+    REQUIRE (surface_cylinder (12, 13) == Approx(1884.95));
+    REQUIRE (surface_cylinder (0, 0) == Approx(0.00));
 }
 
 TEST_CASE ("describe_factorial", "[factorial]") {
@@ -48,4 +48,14 @@ TEST_CASE ("describe_factorial", "[factorial]") {
     REQUIRE (factorial (1) == 1);
     REQUIRE (factorial (6) == 720);
     REQUIRE (factorial (0) == 1);
+}
+
+TEST_CASE ("describe_is_prime", "[is_prime]") {
+    REQUIRE (is_prime (2) == true);
+    REQUIRE (is_prime (3) == true);
+    REQUIRE (is_prime (4) == false);
+    REQUIRE (is_prime (5) == true);
+    REQUIRE (is_prime (6) == false);
+    REQUIRE (is_prime (7) == true);
+    REQUIRE (is_prime (8) == false);
 }

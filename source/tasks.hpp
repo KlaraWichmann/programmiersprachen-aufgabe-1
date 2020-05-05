@@ -4,7 +4,7 @@
 /**
 * Kleinste Zahl die durch 1-20 teilbar ist
 */
-int smallestNum ();
+int smallest_num ();
 
 /**
  * Groessten gemeinsamen Teiler von zwei Zahlen (mit Hilfe des Euklidischen Algorithmus)
@@ -29,16 +29,21 @@ double fract (double num);
 /**
  * Gibt das Volumen eines Zylinders an
  */
-double volumeCylinder (int r, int h);
+double volume_cylinder (int r, int h);
 
 /**
  * Gibt die Oberfläche eines Zylinders an
  */
-double surfaceCylinder (int r, int h);
+double surface_cylinder (int r, int h);
 
 /**
  * Gibt die Fakultät einer Zahl aus
  */
 int factorial (int i);
+
+/**
+ * Prueft, ob die gegebene Zahl eine Primzahl ist
+ */
+bool is_prime (int num);
 
 #endif
