@@ -26,4 +26,14 @@ int sum_multiples ();
  */
 double fract (double num);
 
+/**
+ * Gibt das Volumen eines Zylinders an
+ */
+double volumeCylinder (int r, int h);
+
+/**
+ * Gibt die Oberfläche eines Zylinders an
+ */
+double surfaceCylinder (int r, int h);
+
 #endif

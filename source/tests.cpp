@@ -28,3 +28,14 @@ TEST_CASE ("describe_fract", "[fract]") {
     REQUIRE (fract (-1.123) == Approx(0.123));
     REQUIRE (fract (1.003) == Approx(0.003));
 }
+
+TEST_CASE ("describe_volume_cylinder", "[volume_cylinder]") {
+    REQUIRE (volumeCylinder (2, 1) == Approx(12.56));
+    REQUIRE (volumeCylinder (1, 1) == Approx(3.14));
+    REQUIRE (volumeCylinder (12, 13) == Approx(5881.06));
+    REQUIRE (volumeCylinder (0, 0) == Approx(0.00));
+}
+
+TEST_CASE ("describe_surface_cylinder", "[surface_cylinder]") {
+    //REQUIRE (surfaceCylinder (1, 1) == Approx(0.0));
+}

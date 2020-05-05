@@ -1,7 +1,8 @@
-
+#define _USE_MATH_DEFINES
 #include <iostream>
-#include "tasks.hpp"
 #include <exception>
+#include <cmath>
+#include "tasks.hpp"
 
 /**
 * Kleinstes gemeinsames Vielfaches von a und b finden
@@ -91,5 +92,18 @@ double fract (double num) {
     double result = 0.0;
     numInteger = int(num);
     result = num - numInteger;
+    return result;
+}
+
+double volumeCylinder (int r, int h) {
+    double volume = 0.0;
+    volume = M_PI * std::pow(r, 2.0) * h;
+    volume = (int)(volume * 100)/100.0;
+    return volume;
+}
+
+double surfaceCylinder (int r, int h) {
+    double result = 0.0;
+    
     return result;
 }
