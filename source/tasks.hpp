@@ -21,4 +21,9 @@ int checksum (int num);
  */
 int sum_multiples ();
 
+/**
+ * Gibt den Nachkommaanteil einer Gleitkommazahl aus
+ */
+double fract (double num);
+
 #endif

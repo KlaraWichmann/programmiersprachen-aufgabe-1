@@ -82,3 +82,14 @@ int sum_multiples () {
     }
     return result;
 }
+
+double fract (double num) {
+    if (num < 0) {
+        num *= -1;
+    }
+    int numInteger = 0;
+    double result = 0.0;
+    numInteger = int(num);
+    result = num - numInteger;
+    return result;
+}
