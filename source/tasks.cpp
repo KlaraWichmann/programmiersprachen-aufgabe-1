@@ -131,9 +131,11 @@ bool is_prime (int num) {
     return prime;
 }
 
+/*
 double mile_to_kilometer (double valueMiles) {
     double valueKm = 0.0;
     valueKm = valueMiles * 1.609;
     
     return valueKm;
 }
+*/

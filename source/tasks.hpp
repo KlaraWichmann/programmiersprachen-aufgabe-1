@@ -49,6 +49,6 @@ bool is_prime (int num);
 /**
  * Rechnet Meilenwerte in Kilometer um
  */
-double mile_to_kilometer (double valueMiles);
+//double mile_to_kilometer (double valueMiles);
 
 #endif

@@ -10,7 +10,7 @@ int main (int argc, char* argv[]) {
   //Kleinste durch 1 - 20 teilbare Zahl
   std::cout << smallest_num () << "\n";
     
-    //Miles to kilometer Werteingabe
+    /*Miles to kilometer Werteingabe
     double valueMiles = 0.0;
     std::cout << "Bitte geben sie den Wert in Meilen an: \n";
     std::cin >> valueMiles;
@@ -19,7 +19,7 @@ int main (int argc, char* argv[]) {
     } else {
       std::cout << mile_to_kilometer (valueMiles) << "\n";
     }
-    
+    */
     return Catch::Session().run(argc, argv);
 
 }
