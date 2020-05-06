@@ -74,9 +74,9 @@ int lastDigit (int num) {
     return result;
 }
 
-int sum_multiples () {
+int sum_multiples (int low, int high) {
     int result = 0;
-    for (int i = 0; i <= 1000; i++) {
+    for (int i = low; i <= high; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
             result += i;
         }
@@ -129,4 +129,11 @@ bool is_prime (int num) {
             }
     }
     return prime;
+}
+
+double mile_to_kilometer (double valueMiles) {
+    double valueKm = 0.0;
+    valueKm = valueMiles * 1.609;
+    
+    return valueKm;
 }

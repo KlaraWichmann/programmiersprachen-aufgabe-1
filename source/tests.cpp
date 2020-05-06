@@ -2,6 +2,7 @@
 #include "catch.hpp"
 #include "tasks.hpp"
 #include <cmath>
+#include <iostream>
 
 
 TEST_CASE ("describe_gcd", "[gcd]") {
@@ -18,7 +19,7 @@ TEST_CASE ("describe_checksum", "[checksum]") {
 }
 
 TEST_CASE ("describe_sum_multiples", "[sum_multiples]") {
-    REQUIRE (sum_multiples () == 234168);
+    REQUIRE (sum_multiples (1, 1000) == 234168);
 }
 
 TEST_CASE ("describe_fract", "[fract]") {
@@ -58,4 +59,10 @@ TEST_CASE ("describe_is_prime", "[is_prime]") {
     REQUIRE (is_prime (6) == false);
     REQUIRE (is_prime (7) == true);
     REQUIRE (is_prime (8) == false);
+}
+
+TEST_CASE ("describe_mile_to_kilometer", "[mile_to_kilometer]") {
+    REQUIRE (mile_to_kilometer (1) == Approx(1.609));
+    REQUIRE (mile_to_kilometer (6.5) == Approx(10.4585));
+    REQUIRE (mile_to_kilometer (0) == Approx(0));
 }

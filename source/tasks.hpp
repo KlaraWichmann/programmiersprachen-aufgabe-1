@@ -19,7 +19,7 @@ int checksum (int num);
 /*
  * Addiert alle Zahlen von 1-1000 die durch 3 oder 5 teilbar sind
  */
-int sum_multiples ();
+int sum_multiples (int low, int high);
 
 /**
  * Gibt den Nachkommaanteil einer Gleitkommazahl aus
@@ -45,5 +45,10 @@ int factorial (int i);
  * Prueft, ob die gegebene Zahl eine Primzahl ist
  */
 bool is_prime (int num);
+
+/**
+ * Rechnet Meilenwerte in Kilometer um
+ */
+double mile_to_kilometer (double valueMiles);
 
 #endif
