@@ -54,7 +54,7 @@ int gcd (int a, int b) {
 
 int checksum (int num) {
     if (num < 0) {
-        throw std::invalid_argument ("Uebergebene Zahlen sind ungueltig");
+        throw std::invalid_argument ("Uebergebene Zahl ist ungueltig");
     } else {
         int result = 0;
         while (num > 0) {
@@ -63,15 +63,6 @@ int checksum (int num) {
         }
         return result;
     }
-}
-
-int lastDigit (int num) {
-    int result = 0;
-    while (num > 0) {
-        result = num % 10;
-        num /= 10;
-    }
-    return result;
 }
 
 int sum_multiples (int maxValue) {
