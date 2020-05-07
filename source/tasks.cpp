@@ -109,9 +109,10 @@ int factorial (int num) {
 
 bool is_prime (int num) {
     bool prime = false;
+    /*
     if (num < 2) {
     throw std::invalid_argument ("Uebergebene Zahlen sind ungueltig");
-    } else if (num == 2 ) {
+    } else */if (num == 2 ) {
         prime = true;
     } else if (num % 2 != 0) {
             for (int i = 2; i < num; i++) {
