@@ -27,12 +27,12 @@ int sum_multiples (int maxValue);
 double fract (double num);
 
 /**
- * Gibt das Volumen eines Zylinders an
+ * Gibt das Volumen eines Zylinders an, r = radius, h = hoehe
  */
 double volume_cylinder (int r, int h);
 
 /**
- * Gibt die Oberfläche eines Zylinders an
+ * Gibt die Oberfläche eines Zylinders an, r = radius, h = hoehe
  */
 double surface_cylinder (int r, int h);
 

@@ -1,8 +1,5 @@
-
 #include "catch.hpp"
 #include "tasks.hpp"
-#include <cmath>
-#include <iostream>
 
 
 TEST_CASE ("describe_gcd", "[gcd]") {
