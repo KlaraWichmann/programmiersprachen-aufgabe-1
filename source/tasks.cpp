@@ -32,7 +32,7 @@
 int gcd (int a, int b) {
     int result = 0;
     
-    if ((b == 0 && a == 0) || (a < 0) || (b < 0)) {
+    if (b == 0 && a == 0) {
         throw std::invalid_argument ("Uebergebene Zahlen sind ungueltig");
     }
     
