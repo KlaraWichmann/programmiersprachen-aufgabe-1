@@ -19,7 +19,10 @@ TEST_CASE ("describe_checksum", "[checksum]") {
 }
 
 TEST_CASE ("describe_sum_multiples", "[sum_multiples]") {
-    REQUIRE (sum_multiples (1, 1000) == 234168);
+    REQUIRE (sum_multiples (1000) == 234168);
+    REQUIRE (sum_multiples (5) == 8);
+    REQUIRE (sum_multiples (10) == 33);
+    REQUIRE (sum_multiples (1) == 0);
 }
 
 TEST_CASE ("describe_fract", "[fract]") {

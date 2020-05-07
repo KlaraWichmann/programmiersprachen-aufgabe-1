@@ -17,9 +17,9 @@ int gcd (int a, int b);
 int checksum (int num);
 
 /*
- * Addiert alle Zahlen von 1-1000 die durch 3 oder 5 teilbar sind
+ * Addiert alle Zahlen von 1-maxValue die durch 3 oder 5 teilbar sind
  */
-int sum_multiples (int low, int high);
+int sum_multiples (int maxValue);
 
 /**
  * Gibt den Nachkommaanteil einer Gleitkommazahl aus

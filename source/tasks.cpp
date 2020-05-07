@@ -74,9 +74,9 @@ int lastDigit (int num) {
     return result;
 }
 
-int sum_multiples (int low, int high) {
+int sum_multiples (int maxValue) {
     int result = 0;
-    for (int i = low; i <= high; i++) {
+    for (int i = 1; i <= maxValue; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
             result += i;
         }
