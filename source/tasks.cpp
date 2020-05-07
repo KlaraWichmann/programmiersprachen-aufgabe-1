@@ -67,6 +67,9 @@ int checksum (int num) {
 
 int sum_multiples (int maxValue) {
     int result = 0;
+    if (maxValue < 1) {
+    throw std::invalid_argument ("Obere Grenze muss groesser oder gleich 1 sein");
+    }
     for (int i = 1; i <= maxValue; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
             result += i;
@@ -121,12 +124,3 @@ bool is_prime (int num) {
     }
     return prime;
 }
-
-/*
-double mile_to_kilometer (double valueMiles) {
-    double valueKm = 0.0;
-    valueKm = valueMiles * 1.609;
-    
-    return valueKm;
-}
-*/
