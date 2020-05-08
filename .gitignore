@@ -35,7 +35,7 @@
 [Bb]uild
 
 .vscode
-
+.DS_Store
 
 CMakeCache.txt
 cmake_install.cmake
